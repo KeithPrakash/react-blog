@@ -11,9 +11,10 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: 80%;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
+  
 }
 
 .navbar h1 {
@@ -21,9 +22,13 @@
 }
 
 .navbar .links {
+  padding:10px;
   margin-left: auto;
 }
+.navbar .links:hover{
+  background-color: #f1356d;
 
+}
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
@@ -35,25 +40,109 @@
 }
 
 .content {
-  max-width: 600px;
+  max-width:60%;
+  min-width:80%;
   margin: 40px auto;
-  padding: 20px;
+  padding: 10px;
   
-}
-blog-preview {
-  padding: 10px 16px;
-  margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
 }
 
 .blog-preview:hover {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.blog-preview h2 {
-  font-size: 20px;
+.blog-preview p {
+  font-size: 15px;
+  font-weight: bold;
   color: #f1356d;
-  margin-bottom: 8px;
+  text-decoration:none;
+  overflow-wrap: break-word;
   
 }
+.blog-preview a{
+  text-decoration: none;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+  color: inherit;
+}
+.blog-details{
+-webkit-box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.2);
+  background-color:rgb(252, 254, 255) ;
+  padding:20px;
+}
+.blog-details div{
 
+  margin: 3%;
+
+}
+.article{
+  display: flex;
+  flex-direction:column;
+}
+.blog-preview{
+  margin-top:4px ;
+  border: 1px solid rgb(234, 227, 227);
+ min-height: 100px;
+  display:flex
+}
+.blog-img{
+  height:100%;
+  min-width:20%;
+  background-color:rgb(59, 39, 43);
+  border: 1px solid red
+}
+.blog
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.blog-left{
+  padding-left: 10px;
+  padding-top: 8px;
+}
+
+.create label {
+  text-align: left;
+  display: block;
+}
+
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.create input,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.create textarea{
+width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  height:250px
+}
+.bigTitle{
+  margin-bottom: 0px;
+}
